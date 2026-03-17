@@ -66,10 +66,22 @@ bool InputManager::isPressed(int key)
 bool InputManager::isPressed(std::string key)
 {
 	// If #key is not binded to anything, will return false
-	if (InputManager::binds.find(key) == InputManager::binds.end())
+	if(InputManager::binds.find(key) == InputManager::binds.end())
 		return false;
 
-	return (InputManager::isPressed(InputManager::binds[key]));
+	int boundKey = InputManager::binds[key];
+
+	if(InputManager::isPressed(boundKey))
+		return true;
+
+	// Also accept the opposite case for alphabetic keys
+	// so caps lock or shift won't break input
+	if(boundKey >= 'a' && boundKey <= 'z')
+		return InputManager::isPressed(boundKey - 32); // uppercase
+	else if(boundKey >= 'A' && boundKey <= 'Z')
+		return InputManager::isPressed(boundKey + 32); // lowercase
+
+	return false;
 }
 
 std::string InputManager::keyToString(int value)
