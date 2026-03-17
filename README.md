@@ -95,42 +95,6 @@ Then, it's simple:
 
 Check file `INSTALL.md` for more info.
 
-## Hacking
-
-There's another `README.md` on the `src/` directory.
-In there I try to explain the source and how could you play
-with it.
-
-If you want to contribute,
-[there's a lot we could do together](https://github.com/alexdantas/yetris/issues)!
-Don't hesitate to contact me, any addition is welcome.
-
-The `BUGS` and `TODO` files are nice points to check out
-what we could do.
-
-Also, if you're like me and *love* ncurses games, with textual
-interface and stuff, the `src/Inteface/*` files could be of
-great use. I tried to make them very flexible so you could
-just insert them into a project without too much change.
-
-## Contact
-
-Hello there, I'm Alexandre Dantas (kure)!
-
-Thanks for downloading and playing this game.
-I'm glad you had interest on this project.
-
-You can send me comments, bugs, ideas or anything else by email.
-And if you have time, please visit my blog!
-
-* My email:           `eu @ alexdantas.net`
-* My homepage:        http://www.alexdantas.net/
-* yetris main page:   http://yetris.alexdantas.net/
-* yetris on GitHub:   https://github.com/alexdantas/yetris/
-
-I'd appreciate any commentary - even if it's just
-*"Hello, I play your game!"*.
-
 ## Credits
 
 Huge thanks for all the people that contributed to the project
